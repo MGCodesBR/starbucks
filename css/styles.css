@@ -1,0 +1,100 @@
+/* LOADING FONTS */
+@font-face {
+   font-family: "SoDo Sans";
+   src: local("SoDo Sans Regular"), local("SoDo-Sans-Regular"),
+       url("../assets/fonts/SoDoSans-Regular.woff2") format("woff2"),
+       url("../assets/fonts/SoDoSans-Regular.woff") format("woff"),
+       url("../assets/fonts/SoDoSans-Regular.ttf") format("truetype");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "SoDo Sans";
+   src: local("SoDo Sans SemiBold"), local("SoDo-Sans-SemiBold"),
+       url("../assets/fonts/SoDoSans-SemiBold.woff2") format("woff2"),
+       url("../assets/fonts/SoDoSans-SemiBold.woff") format("woff"),
+       url("../assets/fonts/SoDoSans-SemiBold.ttf") format("truetype");
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "SoDo Sans";
+   src: local("SoDo Sans Bold"), local("SoDo-Sans-Bold"),
+       url("../assets/fonts/SoDoSans-Bold.woff2") format("woff2"),
+       url("../assets/fonts/SoDoSans-Bold.woff") format("woff"),
+       url("../assets/fonts/SoDoSans-Bold.ttf") format("truetype");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+ }
+
+/* RESET */
+*,
+::before,
+::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+
+html,
+body {
+   overflow-x: hidden;
+}
+
+html {
+   font-size: 10px; /* 1rem = 10px */
+   scroll-behavior: smooth;
+}
+
+ul {
+   list-style: none;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+/* PROJECT VARIABLES */
+:root {
+   /* fonts */
+   --font-first: "SoDo Sans", sans-serif;
+   --font-size: 1.4rem;
+   --font-regular: 400;
+   --font-semi: 600;
+   --font-bold: 700;
+
+   /* colors */
+   --color-white: #FFFFFF;
+   --color-black: #000000;
+   --color-gray-ceramic: #EDEBE9;
+
+   --color-green-starbucks: #006241;
+   --color-green-apron: #00A862;
+   --color-green-accent: #00754A;
+   --color-green-house: #1E3932;
+
+   --color-text-dark: rgba(0,0,0,.87);
+   --color-text-soft: rgba(0,0,0,.58);
+   --color-text-white: rgba(255,255,255,1);
+
+   --color-red-background: #D40A35;
+}
+
+/* PROJECT SETTINGS */
+body {
+   font-family: var(--font-first);
+   font-size: var(--font-size);
+   font-weight: var(--font-regular);
+   background-color: var(--color-white);
+   color: var(--color-text-dark);
+   margin: 0;
+}
