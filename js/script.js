@@ -7,3 +7,14 @@ $menuButton.addEventListener("click", () => {
    $menuButton.classList.toggle("-active")
 })
 
+/* FOOTER SITEMAP BUTTON */
+const $sitemapButton = document.querySelectorAll(".sitemap-button")
+
+function selectButton() {
+   let $sitemapActive = this
+   $sitemapActive.classList.toggle("-active")
+}
+
+$sitemapButton.forEach((buttonItem) => {
+   buttonItem.addEventListener("click", selectButton)
+})
